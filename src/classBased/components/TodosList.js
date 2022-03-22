@@ -1,12 +1,11 @@
-import React from "react"
-import TodoItem from "./TodoItem";
-
+import React from 'react';
+import TodoItem from './TodoItem';
 
 class TodosList extends React.Component {
   render() {
     return (
       <ul>
-        {this.props.todos.map(todo => (
+        {this.props.todos.map((todo) => (
           <TodoItem
             key={todo.id}
             todo={todo}
@@ -16,8 +15,8 @@ class TodosList extends React.Component {
           />
         ))}
       </ul>
-    )
+    );
   }
 }
 
-export default TodosList
+export default TodosList;
